@@ -4,11 +4,11 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.control.Alert;
 import java.util.Optional;
-	public class Rectangle extends Application {
+	public class Rectagle extends Application {
 		@Override
 		public void start(Stage primarystage){
-			TextInpuDialog dialog = new TextInputDialog();
-			dilaog.setHeaderText("Input the width and height of the Rectangle");
+			TextInputDialog dialog = new TextInputDialog();
+		dialog.setHeaderText("Input the width and height of the Rectangle");
 			Optional<String> input = dialog.showAndWait();
 			String [] side = input.get().split(" ");
 			double width = Double.parseDouble(side[0]);
